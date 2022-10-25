@@ -1,10 +1,6 @@
 
-
-
-interface Vehicle {
-    name: string;
-    year: Date;
-    broken : boolean;
+interface Reportable {
+   
     summary():string;
 }
 
@@ -19,12 +15,22 @@ const oldCivic = {
     }
 }
 
-const printVechicle = (vehicle: Vehicle):void =>{
+const drink ={
+    color: 'brown',
+    carbonated: true,
+    sugar: 40,
+    summary():string{
+        return `My drink has ${this.sugar}`
+    }
+}
 
-    console.log(`Name: ${vehicle.name}`)
-    console.log(`year: ${vehicle.year}`);
-    console.log(`broken?: ${vehicle.broken}`);
+const printVechicle = (item: Reportable):void =>{
+
+    console.log(item.summary());
+    console.log('hi')
 
 }
 
 printVechicle(oldCivic);
+
+printVechicle(drink)
