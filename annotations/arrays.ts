@@ -27,3 +27,4 @@ const importandDates: (Date | string) [] = [new Date()];
 importandDates.push('10-10-2030');
 importandDates.push(new Date());
 
+console.log(importandDates)
