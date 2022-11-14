@@ -20,3 +20,19 @@ const { age }: { age: number } = profile;
 const {
   coords: { lat, lng },
 }: { coords: { lat: number; lng: number } } = profile;
+
+
+type cardNumber ={
+  cardNumber: number
+}
+
+type cardDate= {
+  cardDate: string
+}
+
+
+//making new types from existing ones.
+type cardDetails = cardNumber & cardDate & {
+  cvv:number
+}
+
