@@ -1,7 +1,6 @@
 // destructuring objects
 
 
-
 const profile = {
     name: "alex",
     age: 20,

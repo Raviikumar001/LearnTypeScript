@@ -34,3 +34,31 @@ const printVechicle = (item: Reportable):void =>{
 printVechicle(oldCivic);
 
 printVechicle(drink)
+
+
+
+//
+
+
+
+interface TUser{
+    readonly dbid:number
+    email: string,
+    userId: number,
+    googleId: string,
+    startTrail():string,
+    getCoupon(couponname: string) :number
+}
+
+const rk: TUser = {dbid:22 , email: "string", userId: 2222,googleId:'stringgg',
+startTrail: ()=> "ravi",
+getCoupon: (name : 'ravi')=> {
+    return 90
+}
+ };
+
+
+rk.email = 'kljlkjlj'
+
+
+

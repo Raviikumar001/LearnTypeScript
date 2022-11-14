@@ -1,4 +1,4 @@
-const drink = {
+const drinks = {
     color: "brown",
     carbonated: true,
     sugar: 40,
@@ -13,3 +13,21 @@ const drink = {
   const sprite: drink = ['brown', true, 49];
   
   
+  // They are like special types of  arrays made in a precise order
+
+  type tuser = [number, string]
+
+  const newUser: tuser = [112, "exapmlell"]
+  newUser[1]='hhj.com'
+  
+  
+
+  
+
+
+
+
+
+
+
+
