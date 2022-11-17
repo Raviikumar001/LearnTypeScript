@@ -47,18 +47,30 @@ interface TUser{
     userId: number,
     googleId: string,
     startTrail():string,
-    getCoupon(couponname: string) :number
+    getCoupon(couponname: string, value: number) :number
 }
 
-const rk: TUser = {dbid:22 , email: "string", userId: 2222,googleId:'stringgg',
+interface TUser{
+    githubToken : string
+}
+
+interface Addmin extends TUser {
+    role: "admin" | "ta" | "learner"
+}
+
+const rk: Addmin = {dbid:22 , email: "string", userId: 2222,googleId:'stringgg',
+githubToken: "kjlkjlj",
+role: "admin",
 startTrail: ()=> "ravi",
-getCoupon: (name : 'ravi')=> {
-    return 90
+getCoupon: (name : 'ravi', off: 10)=> {
+    return off
 }
  };
 
 
-rk.email = 'kljlkjlj'
+rk.email = 'kljlkjlj' 
+
+
 
 
 
