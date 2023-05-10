@@ -1,4 +1,5 @@
 
+//making functions
 const add = (a:number , b :number)=>{
     return a + b;
 }
@@ -30,6 +31,7 @@ const forecast ={
     weather: 'sunny'
 }
 
+//destructuring arrays in params
 const logWeather = ({date, weather}: { date: Date, weather: string}): void =>{
   
     console.log(date);
