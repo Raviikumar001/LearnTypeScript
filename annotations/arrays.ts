@@ -54,7 +54,7 @@ superheroes.push("ravi");
 heropower.push(2)
 
 allUsers.push({name: "", isActive: true});
-
+//we can either give annotaions to variables , but it is better to let typescript do the infrencing.
 
 
 
